@@ -40,7 +40,8 @@
 		"docpad-plugin-text": "2.x",
 		"docpad-plugin-jade": "2.x",
 		"docpad-plugin-related": "2.x",
-    "marked": "*"
+		"marked": "*",
+		"moment": "2.0.x"
 	},
 	"devDependencies": {
 		"docpad-plugin-livereload": "2.x"

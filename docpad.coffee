@@ -1,5 +1,9 @@
 # The DocPad Configuration File
 # It is simply a CoffeeScript Object which is parsed by CSON
+
+moment = require('moment')
+moment.lang('en')
+
 docpadConfig =
 
   # Template Data
@@ -40,7 +44,7 @@ docpadConfig =
       email: "your@email.com"
 
       # Your company's name
-      copyright: "© Your Company 2012"
+      copyright: "© 2013 the original author or authors"
 
 
     # Helper Functions
@@ -67,6 +71,9 @@ docpadConfig =
       # Merge the document keywords with the site keywords
       @site.keywords.concat(@document.keywords or []).join(', ')
 
+    # Format the passed date, by default format like: Thursday, November 29 2012 3:53 PM
+    formatDate: (date,format='LLLL') ->
+      return moment(date).format(format)
 
   # Collections
   # ===========
