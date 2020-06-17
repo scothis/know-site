@@ -41,7 +41,7 @@
 		"docpad-plugin-jade": "2.x",
 		"docpad-plugin-related": "2.x",
 		"marked": "*",
-		"moment": "2.0.x"
+		"moment": "2.26.x"
 	},
 	"devDependencies": {
 		"docpad-plugin-livereload": "2.x"
